@@ -42,7 +42,7 @@ import {Link} from 'react-router-dom';
                                  <div className='price'>
                                     {product.counterInStock>0?(<span className="success">In Stock:{product.counterInStock}</span>
                                     ):(
-                                    <span className='error'>Unavailable :{product.counterInStock}</span>
+                                    <span className='danger'>Unavailable :{product.counterInStock}</span>
                                     )}
                                  </div>
                              </li>
