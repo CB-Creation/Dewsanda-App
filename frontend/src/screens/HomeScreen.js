@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import data from '../data';
 import Product from '../components/Product';
 import axios from 'axios';
 import LoadingBox from '../components/LoadingBox';
@@ -13,7 +12,7 @@ export default function HomeScreen(){
   useEffect(()=>{
     const fetchData = async ()=>{
       try{
-        setLoading(true);
+      setLoading(true);
       const {data} = await axios.get('/api/products');
       setLoading(false);
       setProducts(data);
