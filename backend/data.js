@@ -17,7 +17,7 @@ const data={
     ],
     products:[
         {
-            id:'1',
+            
             name:'Bathisara',
             category:'Incense sticks',
             image:'/img/1_.png',
@@ -29,7 +29,7 @@ const data={
             description:'Bathisara 100 sticks',
         },
         {
-            id:'2',
+            
             name:'Six O\'clock',
             category:'Incense sticks',
             image:'/img/2_.png',
@@ -41,7 +41,7 @@ const data={
             description:'Bathisara Six O\'clock',
         },
         {
-            id:'3',
+            
             name:'Dewsanda',
             category:'Incense sticks',
             image:'/img/3_.png',
