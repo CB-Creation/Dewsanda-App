@@ -1,0 +1,28 @@
+[33m5940222[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m)[m small changes are done
+[33m1452717[m small changes are done
+[33mf9947aa[m Delete node_modules directory
+[33mc681446[m Delete .env
+[33mb93b409[m Makin sign-in
+[33ma67efe2[m Create README.md
+[33m6178bf1[m Add JSON TOkens
+[33md50b5e3[m add products and users to database
+[33m080574a[m Connect database to a MongoDB
+[33mcd6315d[m add cart to localStorage
+[33m6668e34[m start working on cartScreen
+[33m656170c[m use redux to do combine frontend and backend
+[33mee959c2[m add products to homeScreen using redux
+[33mb8b07b3[m Start working with react redux and redux
+[33mced603c[m add eslint to make coding easy
+[33mb8c34e2[m product data are now getting from backend
+[33m41ed0ae[m start working on backend
+[33m5850283[m add folder 1
+[33md72a698[m remove folder 1
+[33m0ba25a2[m change folder
+[33ma4e57d1[m change folder
+[33m835e0ce[m small change done for home
+[33m13867b0[m test 1
+[33mf44bf77[m Do some Product screen styling
+[33m513475c[m Product screen Making
+[33m7cbd690[m Rating and Product separate screen
+[33m4351628[m Homepage basic stuff step 1
+[33m0b69397[m Initialize project using Create React App
