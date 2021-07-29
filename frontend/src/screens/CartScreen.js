@@ -38,7 +38,7 @@ export default function CartScreen(props){
                             cartItems.map((item)=>(
                                 
                                 <li key={item.product}>
-                                    <>{console.log(item)}</>
+                                    <>{console.log(item.product)}</>
                                     <div className="row">
                                         <div>
                                             <img src={item.image} alt={item.name} className="small"></img>
@@ -86,7 +86,7 @@ export default function CartScreen(props){
                                 cartItems.reduce((a,c)=>
                                 a+c.qty,0)} items)
                                 :Rs {cartItems.reduce((a,c)=>
-                                a+c.price.split(' ')[1]*c.qty,0)}/=
+                                a+c.price*c.qty,0)}/=
                             </h2>
                         </li>
                         <li>
