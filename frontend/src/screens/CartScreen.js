@@ -10,6 +10,8 @@ export default function CartScreen(props){
     ? Number(props.location.search.split('=')[1])
     : 1;
     const cart=useSelector(state=>state.cart);
+    const userSignin=useSelector(state=>state.userSignin);
+    const {userInfo}=userSignin;
     const {cartItems}=cart;
     const dispatch = useDispatch();
     
@@ -23,8 +25,17 @@ export default function CartScreen(props){
         dispatch(removeFromCart(id));
         //delete action
     };
+
     const checkoutHandler=()=>{
-        props.history.push('/signin?redirect=shipping')
+
+        if(userInfo.name !== undefined){
+            console.log('1');
+            props.history.push('/signin?redirect=shipping');
+        }
+        else{
+            console.log('2');
+            props.history.push('/signin');
+        }
     }
     return(
         <div className="row top">

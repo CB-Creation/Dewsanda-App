@@ -18,12 +18,15 @@ export default function SignInScreen(props){
     :'/signin';
     
     const submitHandler=(e)=>{
+        console.log(props.location.search);
         e.preventDefault();
         dispatch(signin(email,password));
+        props.history.push('/cart');
 
     }
     useEffect(()=>{
         if(userInfo){
+            
             props.history.push(redirect);
         }
     },[props.history, redirect, userInfo])

@@ -19,6 +19,7 @@ export default function ShippingAddressScreen(props){
     const [country,setCountry]=useState(shippingAddress.country);
     const [postalCode,setPostalCode]=useState(shippingAddress.postalCode);
     const dispatch = useDispatch();
+
     const submitHandler=(e)=>{
         e.preventDefault();
         dispatch(saveShippingAddress({
@@ -34,7 +35,7 @@ export default function ShippingAddressScreen(props){
                 <h1>
                     Shipping Address
                 </h1>
-                <lable htmlFor='fullName'>Full Name</lable>
+                <label htmlFor='fullName'>Full Name</label>
                 <input 
                 type='text' 
                 id='fullName' 
@@ -44,7 +45,7 @@ export default function ShippingAddressScreen(props){
                 required></input>
             </div>
             <div>
-                <lable htmlFor='address'>Address</lable>
+                <label htmlFor='address'>Address</label>
                 <input 
                 type='text' 
                 id='address' 
@@ -54,7 +55,7 @@ export default function ShippingAddressScreen(props){
                 required></input>
             </div>
             <div>
-                <lable htmlFor='city'>City</lable>
+                <label htmlFor='city'>City</label>
                 <input 
                 type='text' 
                 id='city' 
@@ -64,7 +65,7 @@ export default function ShippingAddressScreen(props){
                 required></input>
             </div>
             <div>
-                <lable htmlFor='postalCode'>PostalCode</lable>
+                <label htmlFor='postalCode'>PostalCode</label>
                 <input 
                 type='text' 
                 id='postalCode' 
@@ -74,7 +75,7 @@ export default function ShippingAddressScreen(props){
                 required></input>
             </div>
             <div>
-                <lable htmlFor='country'>Country</lable>
+                <label htmlFor='country'>Country</label>
                 <input 
                 type='text' 
                 id='country' 
@@ -84,7 +85,7 @@ export default function ShippingAddressScreen(props){
                 required></input>
             </div>
             <div>
-                <lable/>
+                <label/>
                 <button 
                 className='primary'
                 type='submit'>Continue</button>
