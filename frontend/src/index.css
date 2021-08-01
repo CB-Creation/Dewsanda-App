@@ -255,7 +255,7 @@ img.large{
   padding: 1rem;
   font-weight: bold;
 }
-.checkout-steps > div:active{
+.checkout-steps > div.active{
   border-top:0.3rem #ff5506 solid;
   color: #ff5506;
 }
