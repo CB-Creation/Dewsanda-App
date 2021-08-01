@@ -15,7 +15,7 @@ export default function SignInScreen(props){
 
     const redirect=props.location.search
     ? props.location.search.split('=')[1]
-    :'/';
+    :'/signin';
     
     const submitHandler=(e)=>{
         e.preventDefault();

@@ -7,7 +7,7 @@ import { userRegisterReducer, userSigninReducer } from './reducers/userReducer';
 const initialState = {
     userSignin:{
         userInfo:localStorage.getItem('userInfo')
-        ? JSON.parse(localStorage.getItem('cartItems'))
+        ? JSON.parse(localStorage.getItem('userInfo'))
         :[],
     },
     cart:{
@@ -15,10 +15,13 @@ const initialState = {
         ? JSON.parse(
             localStorage.getItem('cartItems'))
         : [],
+
         shippingAddress: localStorage.getItem('shippingAddress')
         ? JSON.parse(
             localStorage.getItem('shippingAddress'))
         :{},
+
+        paymentMethod: 'PayPal',
 }
 };
 //useSelector use below states
