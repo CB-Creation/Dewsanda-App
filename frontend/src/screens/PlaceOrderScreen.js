@@ -24,10 +24,9 @@ export default function PlaceOrderScreen(props){
     
         const dispatch=useDispatch();
 
-        const placeOrderHandler=(e)=>{
-            e.preventDefault();
+        const placeOrderHandler=()=>{
             dispatch(createOrder({...cart, orderItems:cart.cartItems}));
-        }
+        };
 
     useEffect(()=>{
         if(success){

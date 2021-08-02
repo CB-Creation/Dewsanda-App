@@ -38,7 +38,7 @@ function App() {
         {
             userInfo
             ? (
-            <div className='dropdown'>{userInfo.name==='Chanaka'?<><Link to='#signout' onClick={signoutHandler}>
+            <div className='dropdown'>{userInfo.name!==undefined?<><Link to='#signout' onClick={signoutHandler}>
             Sign Out
             </Link></>:<><Link to="/signin">Sign In</Link></>}
             <Link to="#">{userInfo.name}</Link>
