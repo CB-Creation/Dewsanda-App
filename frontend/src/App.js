@@ -42,12 +42,7 @@ function App() {
             ? (
             <div className='dropdown'>{userInfo.name!==undefined?
             <>
-            <li>
-                <Link to='/profile'>User Profile</Link>
-            </li>
-            <li>
-                <Link to='/orderhistory'>Order History</Link>
-            </li>
+          
             <Link to='#signout' onClick={signoutHandler}>
             Sign Out
             </Link></>:<><Link to="/signin">Sign In</Link></>}
